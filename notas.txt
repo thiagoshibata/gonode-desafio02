@@ -1,0 +1,4 @@
+configurando sequelize (orm)
+adicionar sequelize e sequelize-cli -D
+
+rodar o comando npx sequelize init

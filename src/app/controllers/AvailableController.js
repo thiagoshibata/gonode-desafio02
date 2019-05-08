@@ -49,7 +49,6 @@ class AvailableController {
     return res.render("available/index", { available });
   }
   async list(req, res) {
-    moment.locale("pt-BR");
     const date = moment(parseInt(req.query.date));
     const appointments = await Appointment.findAll({
       include: [{ model: User, as: "user" }],
